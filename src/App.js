@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import './App.css';
 
 
@@ -54,8 +54,7 @@ function App() {
 
 
   function checkBoard() {
-    // console.log("hello")
-    // console.log(gameBoard.toString())
+
 
     let variance = 3;
     for (let i = 0; i < 3; i++) {
@@ -94,9 +93,9 @@ function App() {
   }
 
   function handleClick(index) {
-    // console.log("Kuch hua", index)
+
     if (gameBoard[index] === " ") {
-      // let newBoard = gameBoard;
+
       gameBoard[index] = chance;
       setGameBoard(gameBoard)
       if (chance === "X") {
