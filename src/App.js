@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import './App.css';
 
-
-
 function App() {
   const initialState = [" ", " ", " ", " ", " ", " ", " ", " ", " "];
   const [gameBoard, setGameBoard] = useState(initialState)
